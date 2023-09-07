@@ -4,11 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Poppins:ital,wght@0,300;1,200;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Age Calculator</title>
 </head>
 
 <body>
-
+  <div class="container">
+    <div class="calculator">
+      <h1>JavaScript<br><span>Age Calculator</span></h1>
+      <div class="input-box">
+        <input type="date" id="date">
+        <button onclick="calculateAge()">Calculate</button>
+      </div>
+      <p id="result"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
