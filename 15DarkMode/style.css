@@ -5,7 +5,7 @@
 .hero {
   height: 100vh;
   width: 100%;
-  background: #edf2fc;
+  background: var(--primary-color);
   font-family: sans-serif;
   position: relative;
 }
@@ -36,7 +36,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ff4321;
+  color: var(--secondary-color);
 }
 
 .info {
@@ -45,7 +45,7 @@ nav ul li a:hover {
 }
 .info h1 {
   font-size: 70px;
-  color: #212121;
+  color: var(--secondary-color);
   margin-bottom: 20px;
 }
 
@@ -54,14 +54,16 @@ span {
 }
 
 .info p {
-  color: #606163;
+  color: var(--secondary-color);
   line-height: 22px;
 }
 
 .info a {
-  background: #212121;
+  background: var(--secondary-color);
   padding: 10px 18px;
-  color: #fff;
+  text-decoration: none;
+  color: var(--primary-color);
+  display: inline-block;
   margin: 30px 0;
   border-radius: 5px;
 }
@@ -89,4 +91,24 @@ span {
 
 .img-box:hover .girl-img {
   left: 54%;
+}
+
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
+}
+
+:root {
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+}
+
+.dark-theme {
+  --primary-color: #000106;
+  --secondary-color: #fff;
 }
